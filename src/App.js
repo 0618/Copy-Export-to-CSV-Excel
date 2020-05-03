@@ -8,7 +8,7 @@ const getTableText = (data, divider) => {
 	const th = `${columns.join(divider)}`;
 	const td = data
 		.map((item) => Object.values(item).join(`"${divider}"`))
-		.join('"\n');
+		.join('"\n"');
 	return `${th}\n"${td}"`;
 };
 
