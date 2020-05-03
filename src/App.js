@@ -39,7 +39,7 @@ export default function App() {
 	};
 
 	const handelExportToExcel = (evt) => {
-		const headData = Object.keys(data).map((col) => ({
+		const headData = Object.keys(data[0]).map((col) => ({
 			value: col,
 			type: "string",
 		}));
